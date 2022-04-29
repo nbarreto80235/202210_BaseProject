@@ -1,3 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+
+<h1>Vivero El Otoño</h1>
+<hr>
+<img src="./assets/imagen1.png" >
+<hr>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre común</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Clima</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let planta of plantas; let indice=index">
+      <th scope="row">{{indice+1}}</th>
+      <td>{{planta.nombre_comun}}</td>
+      <td>{{planta.tipo}}</td>
+      <td>{{planta.clima}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
 <p>
-  plantas-list works!
+  Total plantas interior {{sumInterior}}
 </p>
+<p>
+  Total plantas exterior {{sumExterior}}
+</p>
+
+
+  </div>
+</div>
